@@ -6,5 +6,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "ui_animated_cards",
+  base: "/ui_animated_cards/",
 });
