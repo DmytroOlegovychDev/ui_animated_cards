@@ -1,16 +1,115 @@
-# React + Vite
+# UI Animated Cards
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+UI Animated Cards is a simple React application that demonstrates interactive flip cards. Users can click a card to reveal the answer with a smooth rotation effect, showcasing component-based architecture and state management.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Interactive flip cards
+- Click-to-toggle question and answer
+- Responsive layout for different screen sizes
+- Conditional rendering using React state
+- Styled with Tailwind CSS utility classes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+- React
+- JavaScript (ES6+)
+- Tailwind CSS
+- Vite
+
+---
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   └── Card.jsx
+├── App.jsx
+├── main.jsx
+├── App.css
+└── index.css
+```
+
+---
+
+## Core Logic
+
+### Main Logic
+
+The application renders a collection of cards from a predefined data array. Each card manages its own flip state and conditionally displays either the question or the answer.
+
+- Local state management with `useState`
+- Dynamic rendering using `Array.map()`
+- Conditional rendering based on card state
+- Reusable Card component
+
+---
+
+## Performance Optimizations
+
+- Reusable component architecture
+- Local state isolated within each card
+- Efficient list rendering with React
+
+---
+
+## UI / UX
+
+- Responsive flex layout
+- Interactive click-to-flip behavior
+- Visual feedback through color changes
+- Clean and minimal interface
+
+---
+
+## Getting Started
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run development server
+
+```bash
+npm run dev
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## Future Improvements
+
+- Add smooth 3D flip animations
+- Load card data from an external source
+- Support keyboard accessibility
+- Add customizable card themes
+
+---
+
+## Author
+
+**Dmytro**
+
+Frontend Developer (React / TypeScript)
+
+---
+
+## Notes
+
+This project demonstrates reusable React components, local state management with hooks, conditional rendering, responsive layouts, and interactive UI development using Tailwind CSS.
